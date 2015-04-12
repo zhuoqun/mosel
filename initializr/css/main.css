@@ -1,22 +1,21 @@
+html,
+body {
+  background: #FAF6EC; }
 
+.navbar {
+  background: #0D4373; }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+.navbar-brand,
+.navbar-nav > li > a {
+  color: #EEE;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25); }
 
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background: #10538F; }
 
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #CCC; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=main.css.map */
