@@ -42,7 +42,7 @@ body {
 
   .lead {
     font-size: 20px;
-    margin: 0 auto 30px;
+    margin: 0 auto 20px;
     font-weight: 300;
     line-height: 1.4;
 
@@ -51,22 +51,52 @@ body {
     }
   }
 
-  .click-upload, .where {
-    font-size: 14px;
+  .click-upload,{
+    font-size: 16px;
+    font-weight: 300;
   }
+
+  .where {
+    margin-top: 60px;
+    font-size: 12px;
+    text-align: left;
+  }
+}
+
+.login-form {
+  padding: 20px 0;
+}
+
+.signup {
+  font-size: 20px;
+}
+
+footer {
+  margin-top: 100px;
+  padding: 15px;
+  border-top: 1px solid #EEE;
 }
 
 @media (min-width: $screen-sm-min) {
   .main {
-    padding: 80px 0;
+    padding-top: 80px;
 
     .lead {
       font-size: 40px;
     }
+  }
 
-    .upload {
-      font-size: 24px;
-      font-weight: 300;
+  .login-form {
+    padding: 40px 0;
+
+    .form-el {
+      margin-right: 10px;
     }
+  }
+
+  .signup {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
   }
 }
