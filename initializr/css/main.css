@@ -3,7 +3,8 @@ body {
   background: #FAF6EC; }
 
 .navbar {
-  background: #0D4373; }
+  background: #0D4373;
+  margin-bottom: 0; }
 
 .navbar-brand:hover,
 .navbar-brand:focus,
@@ -15,5 +16,35 @@ body {
 .nav > li > a:hover,
 .nav > li > a:focus {
   background: #10538F; }
+
+.navbar-header .navbar-toggle:hover, .navbar-header .navbar-toggle:focus {
+  background-color: #10538F;
+  border-color: #10538F; }
+.navbar-header .navbar-toggle .icon-bar {
+  background-color: #EEE; }
+
+.main {
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  background-color: #EFEAE1;
+  padding: 30px 0; }
+  .main .lead {
+    font-size: 20px;
+    margin: 0 auto 30px;
+    font-weight: 300;
+    line-height: 1.4; }
+    .main .lead em {
+      font-weight: 400; }
+  .main .click-upload, .main .where {
+    font-size: 14px; }
+
+@media (min-width: 768px) {
+  .main {
+    padding: 80px 0; }
+    .main .lead {
+      font-size: 40px; }
+    .main .upload {
+      font-size: 24px;
+      font-weight: 300; } }
 
 /*# sourceMappingURL=main.css.map */

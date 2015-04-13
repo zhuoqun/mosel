@@ -1,3 +1,5 @@
+$screen-sm-min: 768px;
+
 html,
 body {
   background: #FAF6EC;
@@ -5,6 +7,7 @@ body {
 
 .navbar {
   background: #0D4373;
+  margin-bottom: 0;
 }
 
 .navbar-brand:hover,
@@ -18,4 +21,52 @@ body {
 .nav>li>a:hover,
 .nav>li>a:focus {
   background: #10538F;
+}
+
+.navbar-header .navbar-toggle {
+  &:hover, &:focus {
+    background-color: #10538F;
+    border-color: #10538F;
+  }
+
+  .icon-bar {
+    background-color: #EEE;
+  }
+}
+
+.main {
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+  background-color: #EFEAE1;
+  padding: 30px 0;
+
+  .lead {
+    font-size: 20px;
+    margin: 0 auto 30px;
+    font-weight: 300;
+    line-height: 1.4;
+
+    em {
+      font-weight: 400;
+    }
+  }
+
+  .click-upload, .where {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .main {
+    padding: 80px 0;
+
+    .lead {
+      font-size: 40px;
+    }
+
+    .upload {
+      font-size: 24px;
+      font-weight: 300;
+    }
+  }
 }
