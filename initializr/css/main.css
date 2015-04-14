@@ -45,6 +45,8 @@ body {
 
 .login-form {
   padding: 20px 0; }
+  .login-form .forgot {
+    font-size: 12px; }
 
 .signup {
   font-size: 20px; }
