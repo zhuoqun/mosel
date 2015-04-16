@@ -82,6 +82,10 @@ footer {
 }
 
 @media (min-width: $screen-sm-min) {
+  .container {
+    max-width: 960px;
+  }
+
   .main {
     padding-top: 80px;
 

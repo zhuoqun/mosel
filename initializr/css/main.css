@@ -57,6 +57,9 @@ footer {
   border-top: 1px solid #EEE; }
 
 @media (min-width: 768px) {
+  .container {
+    max-width: 960px; }
+
   .main {
     padding-top: 80px; }
     .main .lead {
