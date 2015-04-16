@@ -1,37 +1,44 @@
-html,
 body {
-  background: #FAF6EC; }
+  padding: 20px 0; }
 
 .navbar {
-  background: #0D4373;
-  margin-bottom: 0; }
+  margin-bottom: 20px; }
 
 .navbar-brand:hover,
 .navbar-brand:focus,
-.navbar-brand,
-.navbar-nav > li > a {
-  color: #EEE;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25); }
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  padding: 15px 0; }
 
+.nav > li.active > a,
 .nav > li > a:hover,
 .nav > li > a:focus {
-  background: #10538F; }
+  background-color: #EEE;
+  color: #333;
+  border-radius: 4px; }
+
+.nav > li > a {
+  margin-right: 2px;
+  color: #333; }
 
 .navbar-header .navbar-toggle:hover, .navbar-header .navbar-toggle:focus {
-  background-color: #10538F;
-  border-color: #10538F; }
+  border-color: #AAA; }
 .navbar-header .navbar-toggle .icon-bar {
-  background-color: #EEE; }
+  background-color: #666; }
 
 .main {
   text-align: center;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  background-color: #EFEAE1;
+  border-radius: 4px;
+  border: 4px dashed #AAA;
+  color: #000;
   padding: 30px 0; }
   .main .lead {
-    font-size: 20px;
+    font-size: 28px;
     margin: 0 auto 20px;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 1.4; }
     .main .lead em {
       font-weight: 400; }
@@ -39,26 +46,25 @@ body {
     font-size: 16px;
     font-weight: 300; }
   .main .where {
-    margin-top: 60px;
+    margin: 60px 0 0 10px;
     font-size: 12px;
     text-align: left; }
+    .main .where a {
+      color: #000; }
 
-.login-form {
-  padding: 20px 0; }
-  .login-form .forgot {
-    font-size: 12px; }
-
-.signup {
-  font-size: 20px; }
+.features {
+  margin: 20px 0; }
 
 footer {
-  margin-top: 100px;
-  padding: 15px;
+  padding: 15px 0;
   border-top: 1px solid #EEE; }
 
 @media (min-width: 768px) {
   .container {
     max-width: 960px; }
+
+  .navbar-right {
+    margin-right: 0; }
 
   .main {
     padding-top: 80px; }
@@ -70,9 +76,7 @@ footer {
     .login-form .form-el {
       margin-right: 10px; }
 
-  .signup {
-    font-size: 24px;
-    font-weight: 300;
-    text-align: center; } }
+  .features {
+    margin: 40px 0; } }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=new.css.map */

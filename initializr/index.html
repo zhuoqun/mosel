@@ -13,7 +13,7 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/new.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
@@ -21,8 +21,9 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-static-top" role="navigation">
-      <div class="container">
+    <div class="container">
+
+      <nav class="navbar navbar-static-top" role="navigation">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-links">
             <span class="sr-only">Toggle navigation</span>
@@ -33,63 +34,50 @@
           <a class="navbar-brand" href="#">My Clippings</a>
         </div>
         <div id="navbar-links" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+            <a href="#">Home</a>
+            </li>
+            <li>
+            <a href="#">About</a>
+            </li>
             <li>
             <a href="#">Contact</a>
+            </li>
+            <li>
+            <a href="#"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Sign In</a>
             </li>
           </ul>
 
         </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
+      </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="main" id="content">
-      <div class="container">
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="main" id="content">
         <p class="lead">Drag and drop <em>My Clippings.txt</em> here<br>to make it clean and organized!</p>
-        <p class="click-upload">or click <a href="">here</a> to upload</p>
-        <p class="where"><em>*<a href="">Coundn't find My Clippings.txt?</a></em></p>
+        <p class="click-upload">or <a href="">Upload</a></p>
+        <p class="where"><em>* <a href="">Coundn't find My Clippings.txt?</a></em></p>
       </div>
-    </div>
 
-    <div class="login-form">
-      <div class="container">
-        <form class="form-inline">
-          <div class="form-group form-el">
-            <label>Already have an account?</label>
+      <div class="features">
+        <div class="row">
+          <div class="col-sm-4">
+            <p>Organize your Highlights and Notes.</p>
           </div>
-          <div class="form-group form-el">
-            <label class="sr-only" for="inputEmail">Email address</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
+          <div class="col-sm-4">
+            <p>Export as TXT, PDF or to Evernote</p>
           </div>
-          <div class="form-group form-el">
-            <label class="sr-only" for="inputPassword">Password</label>
-            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+          <div class="col-sm-4">
+            <p>Add tags, edit your notes.</p>
           </div>
-          <div class="checkbox form-el">
-            <label>
-              <input type="checkbox"> Remember me
-            </label>
-          </div>
-          <button type="submit" class="btn btn-primary form-el">Sign in</button>
-          <div class="form-group">
-            <a href="" class="forgot">Forgot the password?</a>
-          </div>
-        </form>
+        </div>
       </div>
-    </div>
 
-    <div class="signup">
-      <div class="container">
-        <p>New here? <a href="">Create a free account!</a> or sign in using Google, Twitter, Facebook, Evernote, Amazon</p>
-      </div>
-    </div>
-
-    <div class="container">
       <footer>
         <p>&copy; My Clippings 2015</p>
       </footer>
-    </div> <!-- /container -->        
+
+    </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
