@@ -47,6 +47,84 @@
     margin-left: -21px;
     margin-bottom: 20px;
     margin-right: -21px; }
+    .manager .nav-sidebar .sub {
+      background-color: #FFF;
+      padding: 10px 0; }
+      .manager .nav-sidebar .sub li > a {
+        padding-left: 30px; }
+        .manager .nav-sidebar .sub li > a:hover, .manager .nav-sidebar .sub li > a:focus {
+          background-color: #EEE;
+          border-left: 6px solid #EEE; }
+      .manager .nav-sidebar .sub li.active > a {
+        background-color: #FFF; }
+    .manager .nav-sidebar .filter {
+      width: 90%;
+      margin: 0 auto 10px; }
+  .manager .main {
+    min-width: 908px; }
+    .manager .main h1 {
+      font-size: 18px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #EEE; }
+    .manager .main .menubar {
+      margin: 10px 0; }
+      .manager .main .menubar .form-control {
+        display: inline-block;
+        width: auto;
+        margin-right: 6px; }
+      .manager .main .menubar #all_check {
+        margin: 0 10px; }
+      .manager .main .menubar label {
+        font-weight: 400; }
+      .manager .main .menubar .actions {
+        width: 100px; }
+      .manager .main .menubar .checkbox, .manager .main .menubar .dropdown, .manager .main .menubar .viewstyle {
+        display: inline-block;
+        margin: 0 10px 0 0;
+        vertical-align: middle; }
+      .manager .main .menubar #export {
+        color: #333;
+        display: block;
+        cursor: pointer;
+        margin-right: 40px; }
+        .manager .main .menubar #export:hover, .manager .main .menubar #export:active {
+          text-decoration: none;
+          color: #999; }
+      .manager .main .menubar .viewstyle > a {
+        color: #333; }
+        .manager .main .menubar .viewstyle > a:hover, .manager .main .menubar .viewstyle > a:active, .manager .main .menubar .viewstyle > a.active {
+          color: #C43704;
+          text-decoration: none; }
+    .manager .main .clippings .check {
+      margin: 0 10px; }
+    .manager .main .clippings .title {
+      background-color: #EEE;
+      padding: 10px 0;
+      border-top: 1px solid #CCC;
+      border-bottom: 1px solid #DDD; }
+    .manager .main .clippings h2 {
+      font-size: 14px;
+      margin-top: 4px;
+      margin-bottom: 0;
+      display: inline-block;
+      cursor: pointer; }
+      .manager .main .clippings h2 em {
+        margin-left: 20px;
+        color: #777; }
+    .manager .main .clippings .misc {
+      margin: 4px 0 0 34px;
+      color: #777;
+      font-weight: 700; }
+      .manager .main .clippings .misc span {
+        margin-right: 20px; }
+      .manager .main .clippings .misc em {
+        color: #333; }
+      .manager .main .clippings .misc .view-all {
+        margin-left: 120px;
+        font-weight: 400;
+        font-size: 12px; }
+    .manager .main .clippings .content {
+      margin: 20px 0 0 34px; }
 
 footer {
   padding: 15px;

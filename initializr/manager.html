@@ -66,17 +66,110 @@
       <div class="row">
         <div class="col-sm-4 col-md-3 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">All Clippings <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Favorites</a></li>
-            <li><a href="#">Books</a></li>
-            <li><a href="#">Collections</a></li>
-            <li><a href="#">Trash</a></li>
-            <li><a href="#">All Tags</a></li>
+            <li><input type="text" class="form-control filter" placeholder="filter"></li>
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span> All Clippings <span class="sr-only">(current)</span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Favorites</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Tags</a></li>
+            <li>
+            <a href="#"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Books</a>
+              <ul class="nav sub">
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Harry Potter</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Harry Potter</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Harry Potter</a></li>
+              </ul>
+            </li>
+            <li>
+            <a href="#"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Collections</a>
+              <ul class="nav sub">
+                <li><a href="#"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Novel</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Novel</a></li>
+              </ul>
+            </li>
+            <li>
+            <a href="#"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Trash</a>
+              <ul class="nav sub">
+                <li><a href="#"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Books</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> Collections</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span> Clippings</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
 
-        <div class="col-sm-8 col-md-9 main">
-        </div>
+        <div class="col-sm-8 col-sm-offset-4 col-md-9 col-md-offset-3 main">
+          <h1>All Clippings</h1>
+
+          <div class="menubar">
+            <input type="checkbox" id="all_check">
+            <select class="actions form-control">
+              <option>Actions...</option>
+              <option>favorite</option>
+              <option>unfavorite</option>
+              <option>Add to Collections</option>
+              <option>Remove from Collections</option>
+              <option>Add Tags</option>
+              <option>Delete</option>
+            </select>
+
+            <input type="text" class="form-control" placeholder="Search...">
+            <label>Sort by</label>
+            <select class="sortby form-control">
+              <option>time: old to new</option>
+              <option>time: new to old</option>
+              <option>Location: low to high</option>
+              <option>Location: high to low</option>
+              <option>Book</option>
+              <option>Author</option>
+            </select>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox">Show Notes
+              </label>
+            </div>
+
+            <div class="dropdown export">
+              <a class="dropdown-toggle" id="export" data-toggle="dropdown" aria-expanded="true">
+                Export
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">as TXT</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">as PDF</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">to Evernote</a></li>
+              </ul>
+            </div>
+
+            <div class="viewstyle">
+              <a href="" class="active">Expanded</a> |
+              <a href="">List</a>
+            </div>
+          </div><!--/menubar-->
+
+          <div class="clippings">
+            <div class="item">
+              <div class="title">
+                <input type="checkbox" class="check">
+                <h2>Harry Potter<em>By <a href="">J.K.Rolling</a></em></h2>
+              </div><!--/title-->
+
+              <div class="misc">
+                <span>Location: <em>100</em></span>
+                <span>Added on <em>2015.5.24</em></span>
+                <span><a class="view-all" href="">View all clippings from this book</a></span>
+              </div>
+
+              <div class="content">
+                <div class="text">
+                  <p>Import your records by clicking the 'import' button on the left hand side of the toolbar.  You can import your records by uploading the myclippings.txt file on your kindle device or exporting your records directly from the 'your highlight' page on the Amazon website using the Clippings.io Google Chrome extension.  The import routine is intelligent and won't import a record if you have already imported it.</p>
+                </div>
+              </div><!--/title-->
+
+            </div>
+          </div>
+
+        </div><!--/main-->
       </div>
     </div>
 

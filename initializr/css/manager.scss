@@ -70,12 +70,145 @@ $screen-sm-min: 768px;
     margin-left: -21px;
     margin-bottom: 20px;
     margin-right: -21px;
+
+    .sub {
+      background-color: #FFF;
+      padding: 10px 0;
+
+      li>a {
+        padding-left: 30px;
+
+        &:hover, &:focus {
+          background-color: #EEE;
+          border-left: 6px solid #EEE;
+        }
+      }
+
+      li.active>a {
+        background-color: #FFF;
+      }
+    }
+
+    .filter {
+      width: 90%;
+      margin: 0 auto 10px;
+    }
   }
-}
 
+  .main {
+    min-width: 908px;
 
+    h1 {
+      font-size: 18px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #EEE;
+    }
 
-.main {
+    .menubar {
+      margin: 10px 0;
+
+      .form-control {
+        display: inline-block;
+        width: auto;
+        margin-right: 6px;
+      }
+
+      #all_check {
+        margin: 0 10px;
+      }
+
+      label {
+        font-weight: 400;
+      }
+
+      .actions {
+        width: 100px;
+      }
+
+      .checkbox, .dropdown, .viewstyle {
+        display: inline-block;
+        margin:0 10px 0 0;
+        vertical-align: middle;
+      }
+
+      #export {
+        color: #333;
+        display: block;
+        cursor: pointer;
+        margin-right: 40px;
+
+        &:hover, &:active {
+          text-decoration: none;
+          color: #999;
+        }
+      }
+
+      .viewstyle>a {
+        color: #333;
+
+        &:hover, &:active, &.active {
+          color: #C43704;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .clippings {
+
+      .check {
+        margin: 0 10px;
+      }
+
+      .title {
+        background-color: #EEE;
+        padding: 10px 0;
+        border-top: 1px solid #CCC;
+        border-bottom: 1px solid #DDD;
+      }
+
+      h2 {
+        font-size: 14px;
+        margin-top: 4px;
+        margin-bottom: 0;
+        display: inline-block;
+        cursor: pointer;
+
+        em {
+          margin-left: 20px;
+          color: #777;
+        }
+      }
+
+      .misc {
+        margin: 4px 0 0 34px;
+        color: #777;
+        font-weight: 700;
+
+        span {
+          margin-right: 20px;
+        }
+
+        em {
+          color: #333;
+        }
+
+        .view-all {
+          margin-left: 120px;
+          font-weight: 400;
+          font-size: 12px;
+        }
+      }
+
+      .content {
+        margin: 20px 0 0 34px;
+
+        .text {
+        }
+      }
+    }
+
+  }
+
 }
 
 footer {
