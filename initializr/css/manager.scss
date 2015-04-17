@@ -1,110 +1,102 @@
 $screen-sm-min: 768px;
 
-html,
-body {
-  background: #FAF6EC;
-}
-
-.navbar {
-  background: #0D4373;
-  margin-bottom: 0;
-}
-
 .navbar-brand:hover,
 .navbar-brand:focus,
-.navbar-brand,
-.navbar-nav > li > a {
-  color: #EEE;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  padding: 15px;
 }
 
+.nav>li.active>a,
 .nav>li>a:hover,
 .nav>li>a:focus {
-  background: #10538F;
+  background-color: #EEE;
+  color: #333;
+}
+
+.nav>li>a {
+  margin-right: 2px;
+  color: #333;
 }
 
 .navbar-header .navbar-toggle {
   &:hover, &:focus {
-    background-color: #10538F;
-    border-color: #10538F;
+    border-color: #AAA;
   }
 
   .icon-bar {
-    background-color: #EEE;
+    background-color: #666;
   }
 }
 
-.main {
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
-  background-color: #EFEAE1;
-  padding: 30px 0;
+.manager {
+  padding-top: 50px;
 
-  .lead {
-    font-size: 20px;
-    margin: 0 auto 20px;
-    font-weight: 300;
-    line-height: 1.4;
+  .navbar {
+    border-bottom: 2px solid #BE784B;
+    background-image: none;
+    background-color: #FFF;
+  }
 
-    em {
-      font-weight: 400;
+  .sidebar {
+    display: none;
+
+    .nav>li.active>a {
+      background-color: #F5F5F5;
+      color: #C43704;
+      border-left: 6px solid #C43704;
+
+      &:hover, &:focus {
+        border-left: 6px solid #C43704;
+      }
+    }
+
+    .nav>li>a:hover,
+    .nav>li>a:focus {
+      background-color: #DDD;
+      color: #333;
+      border-left: 6px solid #DDD;
+    }
+
+    .nav>li>a {
+      color: #333;
+      border-left: 6px solid #F5F5F5;
     }
   }
 
-  .click-upload,{
-    font-size: 16px;
-    font-weight: 300;
-  }
-
-  .where {
-    margin-top: 60px;
-    font-size: 12px;
-    text-align: left;
+  .nav-sidebar {
+    margin-left: -21px;
+    margin-bottom: 20px;
+    margin-right: -21px;
   }
 }
 
-.login-form {
-  padding: 20px 0;
 
-  .forgot {
-    font-size: 12px;
-  }
-}
 
-.signup {
-  font-size: 20px;
+.main {
 }
 
 footer {
-  margin-top: 100px;
   padding: 15px;
   border-top: 1px solid #EEE;
 }
 
 @media (min-width: $screen-sm-min) {
-  .container {
-    max-width: 960px;
-  }
-
-  .main {
-    padding-top: 80px;
-
-    .lead {
-      font-size: 40px;
+  .manager {
+    .sidebar {
+      position: fixed;
+      top: 51px;
+      bottom: 0;
+      left: 0;
+      z-index: 1000;
+      display: block;
+      padding: 20px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background-color: #F5F5F5;
+      border-right: 1px solid #EEE;
     }
-  }
-
-  .login-form {
-    padding: 40px 0;
-
-    .form-el {
-      margin-right: 10px;
-    }
-  }
-
-  .signup {
-    font-size: 24px;
-    font-weight: 300;
-    text-align: center;
   }
 }

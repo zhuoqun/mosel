@@ -1,0 +1,69 @@
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  padding: 15px; }
+
+.nav > li.active > a,
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: #EEE;
+  color: #333; }
+
+.nav > li > a {
+  margin-right: 2px;
+  color: #333; }
+
+.navbar-header .navbar-toggle:hover, .navbar-header .navbar-toggle:focus {
+  border-color: #AAA; }
+.navbar-header .navbar-toggle .icon-bar {
+  background-color: #666; }
+
+.manager {
+  padding-top: 50px; }
+  .manager .navbar {
+    border-bottom: 2px solid #BE784B;
+    background-image: none;
+    background-color: #FFF; }
+  .manager .sidebar {
+    display: none; }
+    .manager .sidebar .nav > li.active > a {
+      background-color: #F5F5F5;
+      color: #C43704;
+      border-left: 6px solid #C43704; }
+      .manager .sidebar .nav > li.active > a:hover, .manager .sidebar .nav > li.active > a:focus {
+        border-left: 6px solid #C43704; }
+    .manager .sidebar .nav > li > a:hover,
+    .manager .sidebar .nav > li > a:focus {
+      background-color: #DDD;
+      color: #333;
+      border-left: 6px solid #DDD; }
+    .manager .sidebar .nav > li > a {
+      color: #333;
+      border-left: 6px solid #F5F5F5; }
+  .manager .nav-sidebar {
+    margin-left: -21px;
+    margin-bottom: 20px;
+    margin-right: -21px; }
+
+footer {
+  padding: 15px;
+  border-top: 1px solid #EEE; }
+
+@media (min-width: 768px) {
+  .manager .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #F5F5F5;
+    border-right: 1px solid #EEE; } }
+
+/*# sourceMappingURL=manager.css.map */

@@ -17,12 +17,12 @@
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body class="home">
+    <body class="manager">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-static-top" role="navigation">
-      <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-links">
             <span class="sr-only">Toggle navigation</span>
@@ -34,13 +34,11 @@
         </div>
         <div id="navbar-links" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li>
-            <a href="#">Contact</a>
-            </li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
             <li>
+            <a href="">Help</a>
             </li>
             <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Zhuoqun <span class="caret"></span></a>
@@ -54,7 +52,7 @@
             </li>
           </ul>
 
-          <form class="navbar-form navbar-right">
+          <form class="navbar-form navbar-right hidden-xs">
             <button type="button" class="btn btn-success">
               <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Upload
             </button>
@@ -64,49 +62,26 @@
       </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="main" id="content">
-      <div class="container">
-        <p class="lead">Drag and drop <em>My Clippings.txt</em> here<br>to make it clean and organized!</p>
-        <p class="click-upload">or click <a href="">here</a> to upload</p>
-        <p class="where"><em>*<a href="">Coundn't find My Clippings.txt?</a></em></p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">All Clippings <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Favorites</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Trash</a></li>
+            <li><a href="#">All Tags</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-8 col-md-9 main">
+        </div>
       </div>
     </div>
 
-    <div class="login-form">
-      <div class="container">
-        <form class="form-inline">
-          <div class="form-group form-el">
-            <label>Already have an account?</label>
-          </div>
-          <div class="form-group form-el">
-            <label class="sr-only" for="inputEmail">Email address</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
-          </div>
-          <div class="form-group form-el">
-            <label class="sr-only" for="inputPassword">Password</label>
-            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-          </div>
-          <div class="checkbox form-el">
-            <label>
-              <input type="checkbox"> Remember me
-            </label>
-          </div>
-          <button type="submit" class="btn btn-primary form-el">Sign in</button>
-          <div class="form-group">
-            <a href="" class="forgot">Forgot the password?</a>
-          </div>
-        </form>
-      </div>
-    </div>
 
-    <div class="signup">
-      <div class="container">
-        <p>New here? <a href="">Create a free account!</a> or sign in using Google, Twitter, Facebook, Evernote, Amazon</p>
-      </div>
-    </div>
-
-    <div class="container">
+    <div class="container-fluid">
       <footer>
         <p>&copy; My Clippings 2015</p>
       </footer>
