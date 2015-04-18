@@ -96,7 +96,6 @@ $screen-sm-min: 768px;
   }
 
   .main {
-    min-width: 908px;
 
     h1 {
       font-size: 18px;
@@ -164,6 +163,7 @@ $screen-sm-min: 768px;
         padding: 10px 0;
         border-top: 1px solid #CCC;
         border-bottom: 1px solid #DDD;
+        cursor: pointer;
       }
 
       h2 {
@@ -171,7 +171,6 @@ $screen-sm-min: 768px;
         margin-top: 4px;
         margin-bottom: 0;
         display: inline-block;
-        cursor: pointer;
 
         em {
           margin-left: 20px;
@@ -184,8 +183,9 @@ $screen-sm-min: 768px;
         color: #777;
         font-weight: 700;
 
-        span {
+        .item {
           margin-right: 20px;
+          font-size: 12px;
         }
 
         em {
@@ -193,16 +193,25 @@ $screen-sm-min: 768px;
         }
 
         .view-all {
-          margin-left: 120px;
-          font-weight: 400;
-          font-size: 12px;
+          margin-right: 10px;
+
+          a {
+            display: block;
+            font-weight: 400;
+            font-size: 12px;
+          }
         }
       }
 
       .content {
         margin: 20px 0 0 34px;
 
-        .text {
+        .tags {
+          font-size: 12px;
+        }
+
+        .operations {
+          margin: 5px 0;
         }
       }
     }
@@ -230,6 +239,14 @@ footer {
       overflow-y: auto;
       background-color: #F5F5F5;
       border-right: 1px solid #EEE;
+    }
+
+    .main {
+      min-width: 908px;
+
+      .view-all {
+        float: right;
+      }
     }
   }
 }
