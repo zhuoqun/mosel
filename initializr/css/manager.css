@@ -83,23 +83,24 @@
     .manager .main .menubar #export {
       color: #333;
       display: block;
-      cursor: pointer;
-      margin-right: 40px; }
+      cursor: pointer; }
       .manager .main .menubar #export:hover, .manager .main .menubar #export:active {
         text-decoration: none;
         color: #999; }
-    .manager .main .menubar .viewstyle > a {
-      color: #333; }
-      .manager .main .menubar .viewstyle > a:hover, .manager .main .menubar .viewstyle > a:active, .manager .main .menubar .viewstyle > a.active {
-        color: #C43704;
-        text-decoration: none; }
+    .manager .main .menubar .viewstyle {
+      float: right;
+      margin-top: 10px; }
+      .manager .main .menubar .viewstyle a {
+        color: #333; }
+        .manager .main .menubar .viewstyle a:hover, .manager .main .menubar .viewstyle a:active, .manager .main .menubar .viewstyle a.active {
+          color: #C43704;
+          text-decoration: none; }
   .manager .main .clippings .check {
     margin: 0 10px; }
   .manager .main .clippings .title {
     background-color: #EEE;
-    padding: 10px 0;
+    padding: 10px 0 10px 10px;
     border-top: 1px solid #CCC;
-    border-bottom: 1px solid #DDD;
     cursor: pointer; }
   .manager .main .clippings h2 {
     font-size: 14px;
@@ -110,7 +111,7 @@
       margin-left: 20px;
       color: #777; }
   .manager .main .clippings .misc {
-    margin: 4px 0 0 34px;
+    margin: 4px 0 0 10px;
     color: #777;
     font-weight: 700; }
     .manager .main .clippings .misc .item {
@@ -125,11 +126,65 @@
         font-weight: 400;
         font-size: 12px; }
   .manager .main .clippings .content {
-    margin: 20px 0 0 34px; }
+    margin: 20px 0 0 10px; }
     .manager .main .clippings .content .tags {
-      font-size: 12px; }
-    .manager .main .clippings .content .operations {
-      margin: 5px 0; }
+      font-size: 12px;
+      margin-bottom: 10px; }
+  .manager .main .clippings .operations {
+    margin-top: 5px; }
+    .manager .main .clippings .operations .left, .manager .main .clippings .operations .right {
+      margin-bottom: 10px; }
+    .manager .main .clippings .operations.right {
+      text-align: right; }
+    .manager .main .clippings .operations .item {
+      margin-right: 10px;
+      background-color: #EEE;
+      padding: 4px 6px;
+      border-radius: 2px;
+      cursor: pointer;
+      color: #777; }
+      .manager .main .clippings .operations .item:hover, .manager .main .clippings .operations .item:active {
+        color: #333;
+        text-decoration: none; }
+    .manager .main .clippings .operations .favorite:hover, .manager .main .clippings .operations .favorite:active, .manager .main .clippings .operations .favorite.active {
+      color: #FFAC33;
+      text-decoration: none; }
+    .manager .main .clippings .operations .collapse-notes {
+      margin-left: 5px;
+      font-size: 12px;
+      background-color: #FFF;
+      color: #337AB7; }
+      .manager .main .clippings .operations .collapse-notes:hover, .manager .main .clippings .operations .collapse-notes:active {
+        color: #23527C;
+        text-decoration: none; }
+  .manager .main .clippings .notes h3 {
+    margin: 0 0 10px 0;
+    position: relative;
+    font-size: 10px;
+    color: #AAA;
+    text-transform: uppercase;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center; }
+    .manager .main .clippings .notes h3:before, .manager .main .clippings .notes h3:after {
+      position: absolute;
+      top: 51%;
+      overflow: hidden;
+      width: 48%;
+      height: 1px;
+      content: '\a0';
+      background-color: #DDD;
+      margin-left: 2%; }
+    .manager .main .clippings .notes h3:before {
+      margin-left: -50%;
+      text-align: right; }
+  .manager .main .clippings .notes > .item {
+    margin: 0 0 10px 40px;
+    padding: 10px;
+    border: 1px solid #D9B282;
+    border-radius: 4px; }
+    .manager .main .clippings .notes > .item .text .glyphicon {
+      color: #D9B282; }
 
 footer {
   padding: 15px;
@@ -151,6 +206,12 @@ footer {
   .manager .main {
     min-width: 908px; }
     .manager .main .view-all {
-      float: right; } }
+      float: right; }
+    .manager .main .clippings .misc, .manager .main .clippings .content {
+      margin-left: 34px; }
+    .manager .main .clippings .title {
+      padding-left: 0; }
+    .manager .main .right {
+      text-align: right; } }
 
 /*# sourceMappingURL=manager.css.map */

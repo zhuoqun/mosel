@@ -73,7 +73,7 @@
             <li>
             <a href="#"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Books</a>
               <ul class="nav sub">
-                <li class="active"><a href="#"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Harry Potter</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Harry Potter</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Harry Potter</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Harry Potter</a></li>
               </ul>
@@ -100,8 +100,8 @@
           <h1>All Clippings</h1>
 
           <div class="menubar">
-            <input type="checkbox" id="all_check">
-            <select class="actions form-control">
+            <input type="checkbox" class="hidden-xs" id="all_check">
+            <select class="actions form-control hidden-xs">
               <option>Actions...</option>
               <option>favorite</option>
               <option>unfavorite</option>
@@ -111,7 +111,7 @@
               <option>Delete</option>
             </select>
 
-            <input type="text" class="form-control" placeholder="Search...">
+            <input type="text" class="form-control hidden-xs" placeholder="Search...">
             <label>Sort by</label>
             <select class="sortby form-control">
               <option>time: old to new</option>
@@ -122,18 +122,18 @@
               <option>Author</option>
             </select>
 
-            <div class="checkbox">
+            <div class="checkbox hidden-xs">
               <label>
                 <input type="checkbox">Show Notes
               </label>
             </div>
 
-            <div class="dropdown export">
+            <div class="dropdown export hidden-xs">
               <a class="dropdown-toggle" id="export" data-toggle="dropdown" aria-expanded="true">
                 Export
                 <span class="caret"></span>
               </a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              <ul class="dropdown-menu" role="menu" aria-labelledby="export">
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">as TXT</a></li>
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">as PDF</a></li>
                 <li role="presentation" class="divider"></li>
@@ -150,12 +150,12 @@
           <div class="clippings">
             <div class="item">
               <div class="title">
-                <input type="checkbox" class="check">
+                <input type="checkbox" class="check hidden-xs">
                 <h2>Harry Potter<em>By <a href="">J.K.Rolling</a></em></h2>
               </div><!--/title-->
 
               <div class="misc">
-                <span class="item"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span> Location: <em>100</em></span>
+                <span class="item"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Location: <em>100</em></span>
                 <span class="item"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Added on <em>2015.5.24</em></span>
                 <span class="view-all"><a href="">View all clippings from this book</a></span>
               </div>
@@ -170,14 +170,140 @@
                 </div>
 
                 <div class="operations">
-                  <span class="item">
-                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> Favorite
-                  </span>
-                  <span class="item">
-                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
-                  </span>
-                </div>
+                  <div class="row">
+                    <div class="col-sm-6 left">
+                      <a href="" class="item favorite">
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Favorite
+                      </a>
+                      <a href="#" class="item edit">
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
+                      </a>
+                      <a href="#" class="item delete">
+                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete
+                      </a>
+                      <a href="#" class="item collapse-notes">
+                        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span> Hide Notes
+                      </a>
+                    </div>
+                    <div class="col-sm-6 right">
+                      <a href="#" class="item add-tags">
+                        <span class="glyphicon glyphicon-tag" aria-hidden="true"></span> Add Tags
+                      </a>
+                      <a href="#" class="item note">
+                        <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Add Note
+                      </a>
+                      <a href="#" class="item collection">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add to Collection
+                      </a>
+                    </div>
+                  </div>
+                </div><!--operations-->
+
+                <div class="notes">
+                  <h3>Notes</h3>
+                  <div class="item">
+                    <div class="text">
+                      <p><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span> Import your records by clicking the 'import' button on the left hand side of the toolbar.  You can import your records by uploading the myclippings.txt file on your kindle device or exporting your records directly from the 'your highlight' page on the Amazon website using the Clippings.io Google Chrome extension.  The import routine is intelligent and won't import a record if you have already imported it.</p>
+                    </div>
+
+                    <div class="operations right">
+                      <a href="#" class="item edit">
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
+                      </a>
+                      <a href="#" class="item delete">
+                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete
+                      </a>
+                    </div>
+                  </div>
+                </div><!--notes-->
+
+              </div><!--/content-->
+
+            </div>
+            <div class="item">
+              <div class="title">
+                <input type="checkbox" class="check hidden-xs">
+                <h2>Harry Potter<em>By <a href="">J.K.Rolling</a></em></h2>
               </div><!--/title-->
+
+              <div class="misc">
+                <span class="item"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Location: <em>100</em></span>
+                <span class="item"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Added on <em>2015.5.24</em></span>
+                <span class="view-all"><a href="">View all clippings from this book</a></span>
+              </div>
+
+              <div class="content">
+                <div class="text">
+                  <p>Import your records by clicking the 'import' button on the left hand side of the toolbar.  You can import your records by uploading the myclippings.txt file on your kindle device or exporting your records directly from the 'your highlight' page on the Amazon website using the Clippings.io Google Chrome extension.  The import routine is intelligent and won't import a record if you have already imported it.</p>
+                </div>
+
+                <div class="tags">
+                  <p><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Tags: <a href="">Novel</a>, <a href="">Rolling</a></p>
+                </div>
+
+                <div class="operations">
+                  <div class="row">
+                    <div class="col-sm-6 left">
+                      <a href="" class="item favorite">
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Favorite
+                      </a>
+                      <a href="#" class="item edit">
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
+                      </a>
+                      <a href="#" class="item delete">
+                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete
+                      </a>
+                      <a href="#" class="item collapse-notes">
+                        <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span> Hide Notes
+                      </a>
+                    </div>
+                    <div class="col-sm-6 right">
+                      <a href="#" class="item add-tags">
+                        <span class="glyphicon glyphicon-tag" aria-hidden="true"></span> Add Tags
+                      </a>
+                      <a href="#" class="item note">
+                        <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Add Note
+                      </a>
+                      <a href="#" class="item collection">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add to Collection
+                      </a>
+                    </div>
+                  </div>
+                </div><!--operations-->
+
+                <div class="notes">
+                  <h3>Notes</h3>
+                  <div class="item">
+                    <div class="text">
+                      <p><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span> Import your records by clicking the 'import' button on the left hand side of the toolbar.  You can import your records by uploading the myclippings.txt file on your kindle device or exporting your records directly from the 'your highlight' page on the Amazon website using the Clippings.io Google Chrome extension.  The import routine is intelligent and won't import a record if you have already imported it.</p>
+                    </div>
+
+                    <div class="operations right">
+                      <a href="#" class="item edit">
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
+                      </a>
+                      <a href="#" class="item delete">
+                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="text">
+                      <p><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span> Import your records by clicking the 'import' button on the left hand side of the toolbar.  You can import your records by uploading the myclippings.txt file on your kindle device or exporting your records directly from the 'your highlight' page on the Amazon website using the Clippings.io Google Chrome extension.  The import routine is intelligent and won't import a record if you have already imported it.</p>
+                    </div>
+
+                    <div class="operations right">
+                      <a href="#" class="item edit">
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
+                      </a>
+                      <a href="#" class="item delete">
+                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete
+                      </a>
+                    </div>
+                  </div>
+                </div><!--notes-->
+
+              </div><!--/content-->
 
             </div>
           </div>
