@@ -130,7 +130,11 @@ $screen-sm-min: 768px;
         vertical-align: middle;
       }
 
-      #export {
+      .show-notes {
+        margin: 0 22px;
+      }
+
+      .export {
         color: #333;
         display: block;
         cursor: pointer;
@@ -143,7 +147,7 @@ $screen-sm-min: 768px;
 
       .viewstyle {
         float: right;
-        margin-top: 10px;
+        margin-top: 8px;
 
         a {
           color: #333;

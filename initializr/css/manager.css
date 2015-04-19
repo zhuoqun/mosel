@@ -80,16 +80,18 @@
       display: inline-block;
       margin: 0 10px 0 0;
       vertical-align: middle; }
-    .manager .main .menubar #export {
+    .manager .main .menubar .show-notes {
+      margin: 0 22px; }
+    .manager .main .menubar .export {
       color: #333;
       display: block;
       cursor: pointer; }
-      .manager .main .menubar #export:hover, .manager .main .menubar #export:active {
+      .manager .main .menubar .export:hover, .manager .main .menubar .export:active {
         text-decoration: none;
         color: #999; }
     .manager .main .menubar .viewstyle {
       float: right;
-      margin-top: 10px; }
+      margin-top: 8px; }
       .manager .main .menubar .viewstyle a {
         color: #333; }
         .manager .main .menubar .viewstyle a:hover, .manager .main .menubar .viewstyle a:active, .manager .main .menubar .viewstyle a.active {
