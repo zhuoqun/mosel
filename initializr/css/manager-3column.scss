@@ -97,10 +97,30 @@ $screen-sm-min: 768px;
 
   .main {
 
-    h1 {
-      font-size: 18px;
-      padding-bottom: 20px;
+    .hd {
+      padding-bottom: 10px;
       border-bottom: 1px solid #EEE;
+
+      h1 {
+        font-size: 18px;
+        display: inline-block;
+      }
+
+      .viewstyle {
+        float: right;
+        margin-top: 22px;
+        display: inline-block;
+        vertical-align: middle;
+
+        a {
+          color: #333;
+
+          &:hover, &:active, &.active {
+            color: #C43704;
+            text-decoration: none;
+          }
+        }
+      }
     }
 
     .menubar {
@@ -124,41 +144,31 @@ $screen-sm-min: 768px;
         width: 100px;
       }
 
-      .checkbox, .dropdown, .viewstyle {
+      .checkbox, .dropdown {
         display: inline-block;
         margin: 0 10px 0 0;
         vertical-align: middle;
       }
 
       .show-notes {
-        margin: 0 22px;
+        margin: 0;
       }
 
-      .export {
-        color: #333;
-        display: inline-block;
-        vertical-align: middle;
+      .more {
+        margin-left: 13px;
+        font-size: 18px;
+        background-color: #EEE;
+        padding: 4px 8px 2px 6px;
+        border-radius: 2px;
         cursor: pointer;
+        color: #777;
 
         &:hover, &:active {
-          text-decoration: none;
-          color: #777;
-        }
-      }
-
-      .viewstyle {
-        float: right;
-        margin-top: 8px;
-
-        a {
           color: #333;
-
-          &:hover, &:active, &.active {
-            color: #C43704;
-            text-decoration: none;
-          }
+          text-decoration: none;
         }
       }
+
     }
 
     .clippings {
@@ -243,7 +253,6 @@ $screen-sm-min: 768px;
             color: #333;
             text-decoration: none;
           }
-
         }
 
         .favorite {
@@ -318,6 +327,7 @@ footer {
 }
 
 @media (min-width: $screen-sm-min) {
+
   .manager {
     .sidebar {
       position: fixed;
@@ -334,7 +344,15 @@ footer {
     }
 
     .main {
-      min-width: 908px;
+
+      .middle {
+        width: 636px;
+      }
+
+      .dropdown-menu {
+        right: 0;
+        left: auto;
+      }
 
       .view-all {
         float: right;

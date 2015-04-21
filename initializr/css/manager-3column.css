@@ -60,10 +60,22 @@
     .manager .nav-sidebar .filter {
       width: 90%;
       margin: 0 auto 10px; }
-  .manager .main h1 {
-    font-size: 18px;
-    padding-bottom: 20px;
+  .manager .main .hd {
+    padding-bottom: 10px;
     border-bottom: 1px solid #EEE; }
+    .manager .main .hd h1 {
+      font-size: 18px;
+      display: inline-block; }
+    .manager .main .hd .viewstyle {
+      float: right;
+      margin-top: 22px;
+      display: inline-block;
+      vertical-align: middle; }
+      .manager .main .hd .viewstyle a {
+        color: #333; }
+        .manager .main .hd .viewstyle a:hover, .manager .main .hd .viewstyle a:active, .manager .main .hd .viewstyle a.active {
+          color: #C43704;
+          text-decoration: none; }
   .manager .main .menubar {
     margin: 10px 0; }
     .manager .main .menubar .form-control {
@@ -76,28 +88,23 @@
       font-weight: 400; }
     .manager .main .menubar .actions {
       width: 100px; }
-    .manager .main .menubar .checkbox, .manager .main .menubar .dropdown, .manager .main .menubar .viewstyle {
+    .manager .main .menubar .checkbox, .manager .main .menubar .dropdown {
       display: inline-block;
       margin: 0 10px 0 0;
       vertical-align: middle; }
     .manager .main .menubar .show-notes {
-      margin: 0 22px; }
-    .manager .main .menubar .export {
-      color: #333;
-      display: inline-block;
-      vertical-align: middle;
-      cursor: pointer; }
-      .manager .main .menubar .export:hover, .manager .main .menubar .export:active {
-        text-decoration: none;
-        color: #777; }
-    .manager .main .menubar .viewstyle {
-      float: right;
-      margin-top: 8px; }
-      .manager .main .menubar .viewstyle a {
-        color: #333; }
-        .manager .main .menubar .viewstyle a:hover, .manager .main .menubar .viewstyle a:active, .manager .main .menubar .viewstyle a.active {
-          color: #C43704;
-          text-decoration: none; }
+      margin: 0; }
+    .manager .main .menubar .more {
+      margin-left: 13px;
+      font-size: 18px;
+      background-color: #EEE;
+      padding: 4px 8px 2px 6px;
+      border-radius: 2px;
+      cursor: pointer;
+      color: #777; }
+      .manager .main .menubar .more:hover, .manager .main .menubar .more:active {
+        color: #333;
+        text-decoration: none; }
   .manager .main .clippings .check {
     margin: 0 10px; }
   .manager .main .clippings .title {
@@ -206,17 +213,20 @@ footer {
     overflow-y: auto;
     background-color: #F5F5F5;
     border-right: 1px solid #EEE; }
-  .manager .main {
-    min-width: 908px; }
-    .manager .main .view-all {
-      float: right; }
-    .manager .main .clippings .misc, .manager .main .clippings .content {
-      margin-left: 34px; }
-    .manager .main .clippings .content {
-      margin-top: 20px; }
-    .manager .main .clippings .title {
-      padding-left: 0; }
-    .manager .main .right {
-      text-align: right; } }
+  .manager .main .middle {
+    width: 636px; }
+  .manager .main .dropdown-menu {
+    right: 0;
+    left: auto; }
+  .manager .main .view-all {
+    float: right; }
+  .manager .main .clippings .misc, .manager .main .clippings .content {
+    margin-left: 34px; }
+  .manager .main .clippings .content {
+    margin-top: 20px; }
+  .manager .main .clippings .title {
+    padding-left: 0; }
+  .manager .main .right {
+    text-align: right; } }
 
-/*# sourceMappingURL=manager.css.map */
+/*# sourceMappingURL=manager-3column.css.map */
