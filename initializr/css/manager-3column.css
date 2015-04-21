@@ -1,3 +1,6 @@
+body {
+  background-color: #66595C; }
+
 .navbar-brand:hover,
 .navbar-brand:focus,
 .navbar-brand {
@@ -42,14 +45,13 @@
       border-left: 6px solid #DDD; }
     .manager .sidebar .nav > li > a {
       color: #333;
-      border-left: 6px solid #F5F5F5; }
+      border-left: 6px solid #FFF; }
   .manager .nav-sidebar {
     margin-left: -21px;
     margin-bottom: 20px;
     margin-right: -21px; }
     .manager .nav-sidebar .sub {
-      background-color: #FFF;
-      padding: 10px 0; }
+      background-color: #FFF; }
       .manager .nav-sidebar .sub li > a {
         padding-left: 30px; }
         .manager .nav-sidebar .sub li > a:hover, .manager .nav-sidebar .sub li > a:focus {
@@ -95,7 +97,7 @@
     .manager .main .menubar .show-notes {
       margin: 0; }
     .manager .main .menubar .more {
-      margin-left: 13px;
+      margin-left: 10px;
       font-size: 18px;
       background-color: #EEE;
       padding: 4px 8px 2px 6px;
@@ -105,6 +107,11 @@
       .manager .main .menubar .more:hover, .manager .main .menubar .more:active {
         color: #333;
         text-decoration: none; }
+  .manager .main .middle {
+    padding: 0 10px 10px 10px;
+    background: #FFF;
+    margin-top: 20px;
+    border-radius: 4px; }
   .manager .main .clippings .check {
     margin: 0 10px; }
   .manager .main .clippings .title {
@@ -195,26 +202,25 @@
     border-radius: 4px; }
     .manager .main .clippings .notes > .item .text .glyphicon {
       color: #D9B282; }
+  .manager .main .sidebar-right {
+    display: none; }
 
 footer {
   padding: 15px;
   border-top: 1px solid #EEE; }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .manager .sidebar {
-    position: fixed;
-    top: 51px;
-    bottom: 0;
-    left: 0;
+    margin-top: 20px;
     z-index: 1000;
     display: block;
     padding: 20px;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #F5F5F5;
-    border-right: 1px solid #EEE; }
+    background-color: #FFF;
+    border-radius: 4px; }
   .manager .main .middle {
-    width: 636px; }
+    width: 634px; }
   .manager .main .dropdown-menu {
     right: 0;
     left: auto; }
@@ -228,5 +234,12 @@ footer {
     padding-left: 0; }
   .manager .main .right {
     text-align: right; } }
+@media (min-width: 1200px) {
+  .manager .main .sidebar-right {
+    display: block;
+    padding: 20px 10px;
+    background: #FFF;
+    margin-top: 20px;
+    border-radius: 4px; } }
 
 /*# sourceMappingURL=manager-3column.css.map */
