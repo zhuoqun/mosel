@@ -1,6 +1,3 @@
-body {
-  background-color: #66595C; }
-
 .navbar-brand:hover,
 .navbar-brand:focus,
 .navbar-brand {
@@ -25,6 +22,7 @@ body {
   background-color: #666; }
 
 .manager {
+  background: #87B3A8 url("../img/bg.png") repeat;
   padding-top: 50px; }
   .manager .navbar {
     border-bottom: 2px solid #BE784B;
@@ -203,7 +201,34 @@ body {
     .manager .main .clippings .notes > .item .text .glyphicon {
       color: #D9B282; }
   .manager .main .sidebar-right {
-    display: none; }
+    display: block;
+    padding: 10px;
+    background: #FFF;
+    margin-top: 20px;
+    border-radius: 4px; }
+    .manager .main .sidebar-right h2 {
+      font-size: 18px;
+      margin-top: 10px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #EEE; }
+    .manager .main .sidebar-right ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 12px; }
+      .manager .main .sidebar-right ul li {
+        float: left;
+        margin-bottom: 4px; }
+        .manager .main .sidebar-right ul li a {
+          margin-right: 2px;
+          background-color: #DDD;
+          padding: 2px 4px;
+          border-radius: 2px;
+          cursor: pointer;
+          color: #777; }
+          .manager .main .sidebar-right ul li a:hover, .manager .main .sidebar-right ul li a:active {
+            color: #333;
+            text-decoration: none; }
 
 footer {
   padding: 15px;
@@ -220,7 +245,7 @@ footer {
     background-color: #FFF;
     border-radius: 4px; }
   .manager .main .middle {
-    width: 634px; }
+    min-width: 634px; }
   .manager .main .dropdown-menu {
     right: 0;
     left: auto; }
@@ -234,12 +259,5 @@ footer {
     padding-left: 0; }
   .manager .main .right {
     text-align: right; } }
-@media (min-width: 1200px) {
-  .manager .main .sidebar-right {
-    display: block;
-    padding: 20px 10px;
-    background: #FFF;
-    margin-top: 20px;
-    border-radius: 4px; } }
 
 /*# sourceMappingURL=manager-3column.css.map */
