@@ -156,8 +156,11 @@ $screen-lg-min: 1200px;
         margin: 0;
       }
 
+      .dropdown {
+        margin-left: 20px;
+      }
+
       .more {
-        margin-left: 10px;
         font-size: 18px;
         background-color: #EEE;
         padding: 4px 8px 2px 6px;
@@ -271,8 +274,12 @@ $screen-lg-min: 1200px;
           }
         }
 
+        .more {
+          display: inline-block;
+        }
+
         .collapse-notes {
-          margin-left: 5px;
+          float: right;
           font-size: 12px;
           background-color: #FFF;
           color: #337AB7;
@@ -394,11 +401,6 @@ footer {
 
       .middle {
         min-width: 634px;
-      }
-
-      .dropdown-menu {
-        right: 0;
-        left: auto;
       }
 
       .view-all {

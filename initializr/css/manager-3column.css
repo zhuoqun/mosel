@@ -94,8 +94,9 @@
       vertical-align: middle; }
     .manager .main .menubar .show-notes {
       margin: 0; }
+    .manager .main .menubar .dropdown {
+      margin-left: 20px; }
     .manager .main .menubar .more {
-      margin-left: 10px;
       font-size: 18px;
       background-color: #EEE;
       padding: 4px 8px 2px 6px;
@@ -164,8 +165,10 @@
     .manager .main .clippings .operations .favorite:hover, .manager .main .clippings .operations .favorite:active, .manager .main .clippings .operations .favorite.active {
       color: #FFAC33;
       text-decoration: none; }
+    .manager .main .clippings .operations .more {
+      display: inline-block; }
     .manager .main .clippings .operations .collapse-notes {
-      margin-left: 5px;
+      float: right;
       font-size: 12px;
       background-color: #FFF;
       color: #337AB7; }
@@ -246,9 +249,6 @@ footer {
     border-radius: 4px; }
   .manager .main .middle {
     min-width: 634px; }
-  .manager .main .dropdown-menu {
-    right: 0;
-    left: auto; }
   .manager .main .view-all {
     float: right; }
   .manager .main .clippings .misc, .manager .main .clippings .content {
