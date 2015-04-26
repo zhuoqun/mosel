@@ -31,8 +31,12 @@
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="main" id="content">
-        <p class="lead">Drag and drop <em>My Clippings.txt</em> here<br>to make it clean and organized!</p>
-        <p class="click-upload">or <a href="">Upload</a></p>
+        <p class="lead">
+          <script>
+            var lead = Modernizr.draganddrop ? 'Drag and drop <em>My Clippings.txt</em> here<br>to make it clean and organized!'
+                        : '<a href="">Upload</a> your <em>My Clippings.txt</em><br>to make it clean and organized!';
+            document.write(lead);
+          </script>
         <p class="where"><em>* <a href="">Coundn't find My Clippings.txt?</a></em></p>
       </div>
 
