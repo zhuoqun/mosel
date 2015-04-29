@@ -1,0 +1,67 @@
+$screen-sm-min: 768px;
+
+body {
+  padding: 20px 0;
+}
+
+.navbar {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #EEE;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  padding: 15px 0;
+}
+
+.nav>li.active>a,
+.nav>li>a:hover,
+.nav>li>a:focus {
+  background-color: #EEE;
+  color: #333;
+  border-radius: 4px;
+}
+
+.nav>li>a {
+  margin-right: 2px;
+  color: #333;
+}
+
+.navbar-header .navbar-toggle {
+  &:hover, &:focus {
+    border-color: #AAA;
+  }
+
+  .icon-bar {
+    background-color: #666;
+  }
+}
+
+.signup {
+  margin: 40px 0 80px;
+
+  .signin {
+    margin: 20px;
+    text-align: center;
+  }
+}
+
+footer {
+  padding: 15px 0;
+  border-top: 1px solid #EEE;
+}
+
+@media (min-width: $screen-sm-min) {
+  .container {
+    max-width: 960px;
+  }
+
+  .navbar-right {
+    margin-right: 0;
+  }
+}
