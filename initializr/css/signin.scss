@@ -68,14 +68,14 @@ body {
       display: inline-block;
       margin-right: 2px;
       width: 32px;
-      height: 32px;
-      background-position: 0 0;
+      height: 34px;
+      background-position: left bottom;
       background-size: 32px 32px;
       background-repeat: no-repeat;
       text-indent: -9999px;
 
       &:hover {
-        margin-top: -2px;
+        background-position: left top;
       }
     }
 
