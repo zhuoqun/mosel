@@ -13,6 +13,10 @@ body {
   border-bottom: 2px solid #BE784B;
   background-image: none;
   background-color: #FFF;
+
+  .container .navbar-brand {
+    margin-left: 0;
+  }
 }
 
 .sidebar {

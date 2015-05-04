@@ -1,0 +1,27 @@
+      <nav class="navbar navbar-static-top page-<%= @page_id%>" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-links">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">My Clippings</a>
+        </div>
+        <div id="navbar-links" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <% for @item in home_nav_items %>
+              <% @active = @item[:id] === @page_id ? 'active' : ''%>
+              <li class="<%= @active.to_s%>">
+                <a href="<%= @item[:url]%>"><%= @item[:name]%></a>
+              </li>
+            <% end %>
+
+            <% @active = @page_id == 'signin' ? 'active' : ''%>
+            <li class="<%= @active.to_s%>">
+            <a href="/signin/"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Sign In</a>
+            </li>
+          </ul>
+
+        </div><!--/.navbar-collapse -->
+      </nav>

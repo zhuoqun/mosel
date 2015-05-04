@@ -1,5 +1,13 @@
 ---
 en:
+# Customize
+  home:
+    nav_items:
+      index: Home
+      about: About
+      contact: Contact
+      signin: Sign In
+# Standard
   date:
     abbr_day_names:
     - Sun

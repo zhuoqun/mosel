@@ -51,6 +51,18 @@ body {
   margin: 20px 0;
 }
 
+/* About Page and Contact Page*/
+
+.about, .contact {
+  min-height: 400px;
+  margin-top: 40px;
+
+  p {
+    font-size: 16px;
+  }
+}
+
+
 footer {
   padding: 15px 0;
   border-top: 1px solid #EEE;

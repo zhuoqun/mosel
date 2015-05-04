@@ -4,4 +4,5 @@
 //= require modernizr/modernizr
 //= require jquery
 //= require jquery-ujs/src/rails
+//= require bootstrap-sass-official/assets/javascripts/bootstrap-sprockets
 //= require turbolinks
