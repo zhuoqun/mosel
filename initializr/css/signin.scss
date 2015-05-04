@@ -110,6 +110,26 @@ body {
   }
 }
 
+/* Sign up */
+.signup {
+  margin: 40px 0 80px;
+
+  .signin {
+    font-size: 18px;
+    margin: 40px 0;
+  }
+}
+
+/* About */
+.about, .contact {
+  min-height: 400px;
+  margin-top: 40px;
+
+  p {
+    font-size: 16px;
+  }
+}
+
 footer {
   padding: 15px 0;
   border-top: 1px solid #EEE;

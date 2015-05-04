@@ -70,6 +70,20 @@ body {
     .signin .oauth .weibo {
       background-image: url("../img/weibo.png"); }
 
+/* Sign up */
+.signup {
+  margin: 40px 0 80px; }
+  .signup .signin {
+    font-size: 18px;
+    margin: 40px 0; }
+
+/* About */
+.about, .contact {
+  min-height: 400px;
+  margin-top: 40px; }
+  .about p, .contact p {
+    font-size: 16px; }
+
 footer {
   padding: 15px 0;
   border-top: 1px solid #EEE; }
