@@ -51,18 +51,6 @@ body {
   margin: 20px 0;
 }
 
-/* About Page and Contact Page*/
-
-.about, .contact {
-  min-height: 400px;
-  margin-top: 40px;
-
-  p {
-    font-size: 16px;
-  }
-}
-
-
 footer {
   padding: 15px 0;
   border-top: 1px solid #EEE;
@@ -87,5 +75,101 @@ footer {
 
   .features {
     margin: 40px 0;
+  }
+}
+
+/* Sign in*/
+.signin {
+  margin: 40px 0 80px;
+
+  .checkbox {
+    display: inline-block;
+  }
+
+  .forgot {
+    float: right;
+    padding-top: 7px;
+    display: inline-block;
+  }
+
+  .oauth {
+    margin: 60px 0 40px;
+
+    p {
+      font-size: 18px;
+      line-height: 32px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      display: inline-block;
+      margin-right: 2px;
+      width: 32px;
+      height: 34px;
+      background-position: left bottom;
+      background-size: 32px 32px;
+      background-repeat: no-repeat;
+      text-indent: -9999px;
+
+      &:hover {
+        background-position: left top;
+      }
+    }
+
+    .evernote {
+      background-image: image-url('evernote.png');
+    }
+
+    .amazon {
+      background-image: image-url('amazon.png');
+    }
+
+    .facebook {
+      background-image: image-url('facebook.png');
+    }
+
+    .twitter {
+      background-image: image-url('twitter.png');
+    }
+
+    .google {
+      background-image: image-url('google.png');
+    }
+
+    .douban {
+      background-image: image-url('douban.png');
+    }
+
+    .weibo {
+      background-image: image-url('weibo.png');
+    }
+
+  }
+
+  .no-account {
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+/* Sign up */
+.signup {
+  margin: 40px 0 80px;
+
+  .signin {
+    font-size: 18px;
+    margin: 40px 0;
+  }
+}
+
+/* About Page and Contact Page*/
+
+.about, .contact {
+  min-height: 400px;
+  margin-top: 40px;
+
+  p {
+    font-size: 16px;
   }
 }

@@ -1,10 +1,16 @@
 Rails.application.routes.draw do
+
   get 'reader/index'
 
   get 'home/index'
 
+  # Pages
   get '/about/' => 'home#about'
   get '/contact/' => 'home#contact'
+
+  # Users
+  get 'user/signin'
+  get 'user/signup'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
