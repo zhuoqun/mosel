@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'sessions/create'
+
   get 'reader/index'
 
   get 'home/index'
@@ -11,6 +13,13 @@ Rails.application.routes.draw do
   # Users
   get 'user/signin'
   get 'user/signup'
+
+  # Session
+  resources :sessions, :only => [:create]
+
+  # Omniauth
+  get '/auth/:provider/callback' => 'sessions#oauth_success'
+  get '/auth/failure' => 'sessions#oauth_failure'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -13,7 +13,7 @@
             <% for @item in home_nav_items %>
               <% @active = @item[:id] === @page_id ? 'active' : ''%>
               <li class="<%= @active.to_s%>">
-                <a href="<%= @item[:url]%>"><%= @item[:name]%></a>
+                <%= link_to @item[:name], @item[:url]%>
               </li>
             <% end %>
 

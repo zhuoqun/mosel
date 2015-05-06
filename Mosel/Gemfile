@@ -14,8 +14,13 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# Store app secret
+gem "figaro"
+
 # Use Omniauth
 gem 'omniauth-facebook'
+
+gem "omniauth-google-oauth2"
 
 gem 'omniauth-twitter'
 
