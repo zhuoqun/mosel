@@ -1,35 +1,40 @@
       <div class="signin">
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-            <form class="form-horizontal signin-form">
+            <%= form_tag sessions_path, :class => 'form-horizontal signin-form' do %>
+
               <div class="form-group">
-                <label for="email" class="col-sm-4 control-label">Email</label>
+                <%= label_tag :email, t('user.email'), :class => 'col-sm-4 control-label' %>
                 <div class="col-sm-8">
-                  <input type="email" class="form-control" id="email" placeholder="Email">
+                  <%= text_field_tag :email, params[:email], :class => 'form-control', :placeholder =>  t('user.email') %>
                 </div>
               </div>
+
               <div class="form-group">
-                <label for="password" class="col-sm-4 control-label">Password</label>
+                <%= label_tag :password, t('user.password'), :class => 'col-sm-4 control-label' %>
                 <div class="col-sm-8">
-                  <input type="password" class="form-control" id="password" placeholder="Password">
+                  <%= password_field_tag :password, params[:password], :class => 'form-control', :placeholder =>  t('user.password') %>
                 </div>
               </div>
+
               <div class="form-group">
                 <div class="col-sm-offset-4 col-sm-8">
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox"> Remember me
+                      <%= check_box_tag :remember_me %> Remember me
                     </label>
                   </div>
-                  <a class="forgot" href="">Forgot password?</a>
+                  <%= link_to t('user.forgot_password'), '', :class => 'forgot'%>
                 </div>
               </div>
+
               <div class="form-group">
                 <div class="col-sm-offset-4 col-sm-8">
-                  <button type="submit" class="btn btn-primary">Sign in</button>
+                  <%= submit_tag t('user.signin'), :class => 'btn btn-primary' %>
                 </div>
               </div>
-            </form>
+
+            <% end %>
 
             <div class="oauth">
               <div class="row">
@@ -37,13 +42,13 @@
                   <p>Sign in using</p>
                 </div>
                 <div class="col-sm-8">
-                  <a class="evernote" href="/auth/evernote/">Evernote</a>
-                  <a class="amazon" href="/auth/amazon/">Amazon</a>
-                  <a class="facebook" href="/auth/facebook/">Facebook</a>
-                  <a class="twitter" href="/auth/twitter/">Twitter</a>
-                  <a class="google" href="/auth/google/">Google</a>
-                  <a class="douban" href="/auth/douban/">Douban</a>
-                  <a class="weibo" href="/auth/weibo/">Weibo</a>
+                  <%= link_to t('user.oauth.evernote'), '/auth/evernote/', :class => 'evernote'%>
+                  <%= link_to t('user.oauth.amazon'), '/auth/amazon/', :class => 'amazon'%>
+                  <%= link_to t('user.oauth.facebook'), '/auth/facebook/', :class => 'facebook'%>
+                  <%= link_to t('user.oauth.twitter'), '/auth/twitter/', :class => 'twitter'%>
+                  <%= link_to t('user.oauth.google'), '/auth/google/', :class => 'google'%>
+                  <%= link_to t('user.oauth.douban'), '/auth/douban/', :class => 'douban'%>
+                  <%= link_to t('user.oauth.weibo'), '/auth/weibo/', :class => 'weibo'%>
                 </div>
               </div>
             </div>

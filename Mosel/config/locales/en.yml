@@ -7,6 +7,20 @@ en:
       about: About
       contact: Contact
       signin: Sign In
+  user:
+    email: Email
+    password: Password
+    remember_me: Remember me
+    forgot_password: Forgot password?
+    signin: Sign In
+    oauth:
+      evernote: Evernote
+      facebook: Facebook
+      google: Google
+      amazon: Amazon
+      twitter: Twitter
+      douban: Douban
+      weibo: Weibo
 # Standard
   date:
     abbr_day_names:
