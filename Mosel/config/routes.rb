@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get 'user/signin'
   get 'user/signup'
 
+  resources :users
+
   # Session
   resources :sessions, :only => [:create]
 

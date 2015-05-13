@@ -10,9 +10,15 @@ en:
   user:
     email: Email
     password: Password
+    password_confirmation: Confirm Password
     remember_me: Remember me
     forgot_password: Forgot password?
     signin: Sign In
+    signin_slogan: Already have an account? Please %{link} 
+    link_in_signin_slogan: Sign In!
+    signup_slogan: Don't have an account? %{link}
+    link_in_signup_slogan: Sign Up!
+    signup: Sign Up
     oauth:
       evernote: Evernote
       facebook: Facebook

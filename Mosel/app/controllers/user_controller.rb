@@ -9,6 +9,11 @@ class UserController < ApplicationController
   def signup
     @page_id = "signup"
 
+    @user = User.new
+
     render layout: "home"
+  end
+
+  def create
   end
 end

@@ -19,7 +19,10 @@
 
             <% @active = @page_id == 'signin' ? 'active' : ''%>
             <li class="<%= @active.to_s%>">
-            <a href="/user/signin/"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Sign In</a>
+              <%= link_to :href => user_signin_path do %>
+                <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                <%= t('user.signin') %>
+              <% end %>
             </li>
           </ul>
 

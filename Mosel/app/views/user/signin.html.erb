@@ -54,7 +54,7 @@
             </div>
 
             <div class="no-account">
-              <p>Don't have an account? <a href="/user/signup/">Sign up for free!</a></p>
+              <p><%= t('user.signup_slogan', :link => link_to(t('user.link_in_signup_slogan'), user_signup_path)).html_safe %></p>
             </div>
 
           </div>
