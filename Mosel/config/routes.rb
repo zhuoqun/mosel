@@ -22,6 +22,9 @@ Rails.application.routes.draw do
   # Omniauth
   get '/auth/:provider/callback' => 'sessions#oauth_success'
   get '/auth/failure' => 'sessions#oauth_failure'
+  get '/logout' => 'sessions#destroy'
+
+  resources :identities
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

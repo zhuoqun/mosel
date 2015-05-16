@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   def signup
     @page_id = "signup"
 
-    @user = User.new
+    @identity = env['omniauth.identity']
 
     render layout: "home"
   end
