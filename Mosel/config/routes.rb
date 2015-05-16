@@ -11,8 +11,8 @@ Rails.application.routes.draw do
   get '/contact/' => 'home#contact'
 
   # Users
-  get 'user/signin'
-  get 'user/signup'
+  get 'users/signin'
+  get 'users/signup'
 
   resources :users
 

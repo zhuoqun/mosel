@@ -8,4 +8,5 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   provider :google_oauth2, ENV["google_api_key"], ENV["google_api_secret"]
   provider :douban, ENV["douban_api_key"], ENV["douban_api_secret"]
   provider :weibo, ENV["weibo_api_key"], ENV["weibo_api_secret"]
+  provider :identity, :fields => [:email], :on_failed_registration => UsersController.action(:new)
 end
