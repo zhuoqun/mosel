@@ -1,6 +1,12 @@
       <div class="signin">
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+            <% if flash[:error].present? %>
+              <div class="error-messages bg-danger">
+                <p><%= flash[:error] %></p>
+              </div>
+            <% end %>
+
             <%= form_tag '/auth/identity/callback', :class => 'form-horizontal signin-form' do %>
 
               <div class="form-group">

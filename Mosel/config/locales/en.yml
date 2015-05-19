@@ -19,6 +19,7 @@ en:
     signup_slogan: Don't have an account? %{link}
     link_in_signup_slogan: Sign Up!
     signup: Sign Up
+    signin_failure: Your Email Address or Password is incorrect. Please try again.
     oauth:
       evernote: Evernote
       facebook: Facebook
@@ -27,6 +28,7 @@ en:
       twitter: Twitter
       douban: Douban
       weibo: Weibo
+      auth_failure: Your Signin is failed. Please try again.
 # Standard
   date:
     abbr_day_names:

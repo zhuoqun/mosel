@@ -1,16 +1,17 @@
       <div class="signup">
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-<% if @identity && @identity.errors.any? %>
-    <div class="error_messages">
-      <h2><%= pluralize(@identity.errors.count, "error") %> prohibited this account from being saved:</h2>
-      <ul>
-      <% @identity.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+
+            <% if @identity && @identity.errors.any? %>
+              <div class="error-messages bg-danger">
+                <ul>
+                <% @identity.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+                <% end %>
+                </ul>
+              </div>
+            <% end %>
+
             <%= form_tag '/auth/identity/register', :class => 'form-horizontal signin-form' do %>
               <div class="form-group">
                 <%= label_tag :email, t('user.email'), :class => 'col-sm-4 control-label' %>
