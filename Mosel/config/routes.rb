@@ -1,12 +1,7 @@
 Rails.application.routes.draw do
 
-  get 'sessions/create'
-
-  get 'reader/index'
-
-  get 'home/index'
-
   # Pages
+  get 'home/index'
   get '/about/' => 'home#about'
   get '/contact/' => 'home#contact'
 
@@ -26,11 +21,16 @@ Rails.application.routes.draw do
 
   resources :identities
 
+  #reader
+  get '/reader' => 'readers#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'home#index'
+  # different root for logged in/unlogged in users
+  get '/' => 'home#index', :constraints => lambda {|r| r.session[:user_id].nil? }
+  root :to => 'reader#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
