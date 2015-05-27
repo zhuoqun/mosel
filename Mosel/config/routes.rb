@@ -4,10 +4,13 @@ Rails.application.routes.draw do
   get 'home/index'
   get '/about/' => 'home#about'
   get '/contact/' => 'home#contact'
+  get '/help/' => 'readers#help'
 
   # Users
   get 'users/signin'
   get 'users/signup'
+  get 'users/profile'
+  get 'users/settings'
 
   resources :users
 
@@ -17,7 +20,7 @@ Rails.application.routes.draw do
   # Omniauth
   get '/auth/:provider/callback' => 'sessions#oauth_success'
   get '/auth/failure' => 'sessions#oauth_failure'
-  get '/logout' => 'sessions#destroy'
+  get '/signout' => 'sessions#destroy'
 
   resources :identities
 

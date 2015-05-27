@@ -7,30 +7,33 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">My Clippings</a>
+          <%= link_to 'My Clippings', '/', :class => 'navbar-brand' %>
         </div>
         <div id="navbar-links" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-          </ul>
-
           <ul class="nav navbar-nav navbar-right">
             <li>
-            <a href="">Help</a>
+            <%= link_to t('help'), help_path %>
             </li>
             <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Zhuoqun <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Settings</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Sign Out</a></li>
+              <% for @item in user_menu_items %>
+                <% if @item[:id] === 'divider' %>
+                  <li class="divider"></li>
+                <% else %>
+                  <li>
+                  <%= link_to @item[:name], @item[:url]%>
+                  </li>
+                <% end %>
+              <% end %>
             </ul>
             </li>
           </ul>
 
           <form class="navbar-form navbar-right hidden-xs">
             <button type="button" class="btn btn-success">
-              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Import
+              <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+              <%= t('import') %>
             </button>
           </form>
 

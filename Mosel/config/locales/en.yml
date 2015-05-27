@@ -29,6 +29,11 @@ en:
       douban: Douban
       weibo: Weibo
       auth_failure: Your Signin is failed. Please try again.
+    profile: Profile
+    settings: Settings
+    signout: Sign Out
+  help: Help
+  import: Import
 # Standard
   date:
     abbr_day_names:
